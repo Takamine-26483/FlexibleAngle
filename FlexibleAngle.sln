@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexibleAngle", "FlexibleAngle\FlexibleAngle.csproj", "{27738798-9B3C-4379-A4E8-25D1834842CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{FC45D3E0-3197-4DB4-8D39-AC756D868520}"
+	ProjectSection(ProjectDependencies) = postProject
+		{27738798-9B3C-4379-A4E8-25D1834842CF} = {27738798-9B3C-4379-A4E8-25D1834842CF}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27738798-9B3C-4379-A4E8-25D1834842CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27738798-9B3C-4379-A4E8-25D1834842CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27738798-9B3C-4379-A4E8-25D1834842CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27738798-9B3C-4379-A4E8-25D1834842CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC45D3E0-3197-4DB4-8D39-AC756D868520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC45D3E0-3197-4DB4-8D39-AC756D868520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC45D3E0-3197-4DB4-8D39-AC756D868520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC45D3E0-3197-4DB4-8D39-AC756D868520}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {833B3096-C0AC-4770-8EA4-F2AC2881F4DE}
+	EndGlobalSection
+EndGlobal
