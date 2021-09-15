@@ -36,10 +36,13 @@ namespace Sample
 
 			angle.IsMinimumContorlled = true;
 			angle.Degree = 360;
-			Write("★Degree = 360");
+			Write("★IsMinimumContorlled = true　と　Degree = 360");
 
 			angle.Degree = -90;
 			Write("★Degree = -90");
+
+			angle.Radian = 12;
+			Write("★Radian = 12");
 
 			Console.ReadKey();
 

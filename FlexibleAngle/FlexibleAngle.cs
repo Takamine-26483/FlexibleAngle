@@ -26,7 +26,7 @@ namespace TakamineProduction
 			set => CalcCore(value, true);
 		}
 
-		/// <summary>角度変更時、必ず0~359°（Rad換算でおよそ0~PI*2）に収めるよう調整するフラグ</summary>
+		/// <summary>角度変更時、必ず0~359°（Rad換算でおよそ0~PI*2）に収めるようオーバーフローするフラグ</summary>
 		public bool IsMinimumContorlled { get; set; }
 
 
@@ -51,7 +51,9 @@ namespace TakamineProduction
 
 			if (IsMinimumContorlled)
 			{
-				_degree = Math.Abs(_degree) % 360;
+				_degree = _degree % 360;
+				if (_degree < 0)
+					_degree += 360;
 				_radian = _degree * (Math.PI / 180);
 			}
 		}
